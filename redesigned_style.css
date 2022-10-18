@@ -3,6 +3,8 @@
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
+	justify-items: center;
+	flex-wrap: wrap;
 }
 
 .subcontent{
@@ -17,9 +19,11 @@
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .card{
 	margin: 2rem;
 	width: 40%;
+
 }

@@ -1,0 +1,25 @@
+.main-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.subcontent{
+	padding: 3em;
+}
+
+.carousel-inner{
+	height: 30em;
+}
+
+.user-hierarchy{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.card{
+	margin: 2rem;
+	width: 40%;
+}

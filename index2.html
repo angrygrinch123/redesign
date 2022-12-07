@@ -1,0 +1,208 @@
+  <!doctype html>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style2.css">
+    <body>
+
+      <div id="app-container">
+      <div class="jumbotron">
+        <h1 class="display-4">Are we <em> Actually </em> Accessible? </h1>
+        <p class="lead">We pride in our advocacy for inclusion, diversity, and accessibility, but do we <em>actually</em> demonstrate that? The website says otherwise.</p>
+      </div>
+
+      <div class="section1">    
+        <div class="card-body">
+          <p class="card-text">Despite being the face of Brown's CS program, the <a href="https://cs.brown.edu/degrees/doctoral/" class="card-link">Brown CS PhD website</a>  
+            has an unintiutive, inaccessible design that makes it hard for prospective applicants and 
+            current PhD students find information relevant to the program.
+            The main focus of the project is <b> to change the visual hierarchy and
+              add more alt text for visual accessibility</b>. 
+              So the following is a more <b>enhanced narrative of the 
+                first iteration </b> of this project with my personal reflections on the project and summary of feedback. 
+                <p>
+
+                </p>
+                The first iteration suffered from lack of clear narrative, not enough visual contrast, and images that were too large. 
+             <a href="https://angrygrinch123.github.io/redesign/index.html" class="card-link">Link to First Iteration of the Project</a>.
+            </p>
+          <img class="card-img-top" src="original.png" alt="screenshot of cs phd website">
+        </div>
+
+        <div class="jumbotron bg-white">
+          <h3>Key Issues</h2>
+          The main issues of the current website came from the lack of visual hierachy, lack of alt text, and poor visual contrast.
+          It was not clear who the website was made for because all the content is concatenated on one page.
+          There needs to be a better segregation of the page based on user type - Current PhD Students vs Prospective Students
+          would want different kinds of information. 
+          <p></p>
+          <div class="card-text ">
+            <ul>
+              <li>
+                <b> Layout Alignment </b> - The alignment does not follow Gesalt Principles as there is no continuity in the style of the website nor is the content grouped by similarity; so the layout does not follow the conceptual model that users usually expect (i.e. prospective students and current students expect separate pages or dividers to find relevant info and not to have all the info one one page)
+              </li>
+              <li>
+                <b> Poor Contrast Management </b> - Too much bolding, bullet pointing, and navigation bars create confusion about what is truly important on the page
+              </li>
+              <li>
+                <b> Inefficient </b> - Does not follow the conceptual model of prospective students nor current students; most expect a separate section for different users and the order in which they find this information usually is more organized; this also affects memorability because the user must re-adjust each time and relearn the format and information hierarchy  
+              </li>
+              <li>
+                <b> Visual Overload </b> - There are too many options to navigate around the page (i.e. the navigation bar, the bread crumbs, and the tabs) which creates a high bar for learnability 
+              </li>
+              <li>
+                <b> Inaccessible </b> - Much of the alt texts are missing and the color contrast is not friendly to users with visual impairments 
+              </li>
+            </ul>
+          </div>
+
+          <h2 style="margin-top:5vw;">WAVE Findings</h2>
+          <div class="card-text">
+            The biggest change I wanted to make was <b>(1) Change of Hierarchy, (2) Addition of Alt Text, (3) and Visual Contrast.</b> This was to 
+            create a easier navigation experience based on user profile (i.e. Current vs Prospective PhD Student) as well as highlight
+            important dates and contact information. 
+            <p></p>
+            <ul>
+              <li>
+                <b> 16 Contrast Errors </b> - The orange to white background signal a lot of contrast error 
+              </li>
+              <li>
+                <b>2 Suspicious Alternative Textst</b> - The alt text don't have any meaningful descriptions in it and only includes the picture name
+              </li>
+            </ul>
+          </div>
+           <img class="card-img prototype-img-1" src="website_fix.png" alt="screenshot of cs phd website with annotation of fixes">
+        </div>
+
+
+        <div class="jumbotron bg-white">
+           <h2>Lo-fi Redesign</h2>
+          <div class="card-text  ">
+            Low fidelity redesigns for website, smartphone, and tablet. The new wireframes reduce visual overload by removing multiple navbars, centralizes the layout alignment into one central flow, adds better support for users with visual impairments with added contrast and alt texts, and increases efficiency by segregating content with a hierarchical model by users.
+          </div>
+
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Lo-fi Prototype in Website Format
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <img class="card-img prototype-img-1" src="website_lofi.png" alt="lo-fi prototype of cs phd website for website format">
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Lo-fi Prototype in iPhone Format
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <img class="card-img prototype-img" src="phone_lofi.png" alt="lo-fi prototype of cs phd website for smartphones">
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Lo-fi Prototype in Tablet Format
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <img class="card-img prototype-img" src="tablet_lofi.png" alt="lo-fi prototype cs phd website in tablet format">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+         <div class="jumbotron bg-white">
+          <h2>Visual Design Style Guide</h2>
+          <div class="card-text  "> 
+            For the design style guide, I use bootstrap for the aesthetic choice. They typography is the embedded ones form bootstrap. Many of the components are from: <a href="https://www.figma.com/file/ktpWAOMHGZlAa7cBkiTAJB/Bootstrap-UI-Kit-(Community)?node-id=139%3A17">Figma Template for Boostrap</a> and <a href="https://getbootstrap.com/docs/4.0/components/">Bootstrap Components</a>
+            I chose very simple, but bold colors to add contrast between texts and link. The main point of the <b>navbar was to enhance visual hierarchy</b> 
+            and the <b>simple, contrasting colors to be accessible to those with visual impairments.</b>
+          </div>
+          <img class="card-img prototype-img-1" src="visual_style_guide.png" alt="Visual Style Guide for Website">
+
+        </div>
+
+ 
+        <div class="jumbotron bg-white">
+          <h2>Hi-fi Redesign</h2>
+          <div class="card-text">
+            High fidelity redesigns for website, smartphone, and tablet. The new wireframes demonstrate dynamic realignment of layout and responsive changes of colors over hover functionalities.
+          </div>
+
+
+          <div class="accordion" id="accordionExample2">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne2">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
+                  Hi-fi Prototype in Website Format
+                </button>
+              </h2>
+              <div id="collapseOne2" class="accordion-collapse collapse show" aria-labelledby="headingOne2" data-bs-parent="#accordionExample2">
+                <div class="accordion-body">
+                  <img class="card-img prototype-img-1" src="website_hifi.png" alt="hi-fi prototype of cs phd website for website format">
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
+                  Hi-fi Prototype in iPhone Format
+                </button>
+              </h2>
+              <div id="collapseTwo2" class="accordion-collapse collapse" aria-labelledby="headingTwo2" data-bs-parent="#accordionExample2">
+                <div class="accordion-body">
+                  <img class="card-img prototype-img" src="phone_hifi.png" alt="hi-fi prototype of cs phd website for smartphones">
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2">
+                  Hi-fi Prototype in Tablet Format
+                </button>
+              </h2>
+              <div id="collapseThree2" class="accordion-collapse collapse" aria-labelledby="headingThree2" data-bs-parent="#accordionExample2">
+                <div class="accordion-body">
+                  <img class="card-img prototype-img" src="tablet_hifi.png" alt="hi-fi prototype cs phd website in tablet format">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        </div>
+
+        <div class="jumbotron bg-white">
+          <h2>Redesign Iterations</h2>
+          In addition, to the change in narrative, I incorporated the feedback from a peer evaluation session.
+          <b>(1) Add Margins (2) Central View Flow (3) Accordions to replace the Boxes for Responsive-ness (4) Fewere color schemes for heightened visual contrast. </b>
+          <p></p>
+          <div class="card-text">
+            <ol>
+              <li><a href="./redesigned.html">First Website Redesign</a></li>
+              <li><a href="./redesgin2.html">Second Website Redesign</a></li>
+            </ol>
+          </div>
+
+ 
+
+      </div> <!-- end of section 1 div --> 
+      </div>
+ 
+      </body>
+      </html>
